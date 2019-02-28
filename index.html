@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Heather Wiemelt's Portfolio Site">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Heather Wiemelt">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+<div class="rightcolumn">
+
+  <div class="heathercard">
+    <a href="index.html"><h2 class="my_name" style="font-size:23px;">Heather<br>Wiemelt</h2></a>
+  </div>
+
+<div class="social_deets">
+  <a href="https://www.facebook.com/hwiemelt" target="_blank" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/heatherwiemelt" target="_blank" class="fa fa-twitter"></a>
+  <a href="https://www.linkedin.com/in/heather-wiemelt-1462287b/" target="_blank" class="fa fa-linkedin"></a>
+  <a href="https://www.pinterest.com/heatherwiemelt/" target="_blank" class="fa fa-pinterest"></a>
+</div>
+
+
+<!-- Simulate a Desktop -->
+<div class="desktop-container">
+  <div class="topnav">
+      <a href="aboutMe.html"><div class="main_links">About Me</div><br></a>
+      <a href="resume.html"><div class="main_links">Resume</div><br></a>
+      <a href="index.html"><div class="main_links">Portfolio</div><br></a>
+      <a href="contactMe.html"><div class="main_links">Contact Me</div></a>
+  </div>
+</div>
+<!-- End Desktop -->
+
+
+
+
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+  <div class="topnav">
+    <a href="#home" class="active">Navigation</a>
+    <div id="myLinks">
+      <a href="aboutMe.html"><div class="main_links">About Me</div><br></a>
+      <a href="resume.html"><div class="main_links">Resume</div><br></a>
+      <a href="index.html"><div class="main_links">Portfolio</div><br></a>
+      <a href="contactMe.html"><div class="main_links">Contact Me</div></a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+<!-- End smartphone / tablet look -->
+</div>
+
+</div>
+
+
+
+<div class="row">
+<div class="leftcolumn">
+
+    <div class="head_title">
+      <h2 class="pagecard">My Portfolio</h2>
+    </div>
+
+
+    <div class="content_box">
+
+
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'web')">WEB</button>
+        <button class="tablinks" onclick="openCity(event, 'print')">PRINT</button>
+        <button class="tablinks" onclick="openCity(event, 'video')">VIDEO</button>
+        <button class="tablinks" onclick="openCity(event, 'photography')">PHOTOS</button>
+      </div>
+
+      <div id="web" class="tabcontent">
+        <h3>WEB</h3>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/web/atac_mobile_large.png">
+              <img src="images/web/atac_mobile2.png" alt="Arts Tech Animation Connection Mobile design 2">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+
+                <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="Arts Tech Animation Connection Desktop design">
+                <img src="images/web/atac_desktop.png" alt="Arts Tech Animation Connection Desktop design" width="500px">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="Arts Tech Animation Connection Mobile design 1">
+                <img src="images/web/atac_mobile.png" alt="Arts Tech Animation Connection Mobile design 1">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img_lights.jpg">
+                <img src="images/web/psychmobile.png" alt="Psychology Mobile Design 1">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img_lights.jpg">
+                <img src="images/web/psych_desktop.png" alt="Psychology Desktop">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="img_mountains.jpg">
+                <img src="images/web/psychmobile2.png" alt="Psychology Mobile Design 2">
+              </a>
+              <div class="desc">Add a description of the image here</div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+</div>
+
+
+      <div id="print" class="tabcontent">
+        <h3>PRINT</h3>
+<div class=helper>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/print/aurora_thumb.jpg">
+              <img src="images/print/aurora_thumb.jpg" alt="digital painting of aurora landscape">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_forest.jpg">
+              <img src="images/print/big_bird_thumb.png" alt="digital painting of cartoon bird">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+
+        <!-- <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_lights.jpg">
+              <img src="images/print/dig_purp_thumb.jpg" alt="Northern Lights">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div> -->
+
+        <!-- <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_mountains.jpg">
+              <img src="images/print/cosplaykaraoke_thumb.png" alt="Mountains">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div> -->
+
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_mountains.jpg">
+              <img src="images/print/leonid_thumb.jpg" alt="colorful digital painting of city">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_mountains.jpg">
+              <img src="images/print/cd_thumb.png" alt="geometric CD cover graphic">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_mountains.jpg">
+              <img src="images/print/event_poster_thumb.png" alt="Arts Tech event poster">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_mountains.jpg">
+              <img src="images/print/atk_info_thumb.png" alt="Arts tech information poster">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_mountains.jpg">
+              <img src="images/print/music_saves_thumb.png" alt="Music Saves lives poster with yellow text on blue background">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_mountains.jpg">
+              <img src="images/print/HomecomingPosterfull_thumb.png">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_mountains.jpg">
+              <img src="images/print/homecomingcover_thumb.png" alt="Homecoming Banner graphic">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+        </div>
+</div>
+
+
+
+<div id="video" class="tabcontent">
+        <h3>VIDEO</h3>
+<div class=helper>
+<!--Video-->
+  <div class="responsiveVideo">
+        <div class="gallery">
+          <iframe src="https://www.youtube.com/embed/H2McZ5Uit10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </a>
+              <div class="desc">Add a description of the image here</div>
+        </div>
+  </div>
+<!--Video-->
+  <div class="responsiveVideo">
+        <div class="gallery">
+          <iframe src="https://www.youtube.com/embed/ebxWb0ZhORc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </a>
+              <div class="desc">Add a description of the image here</div>
+        </div>
+  </div>
+<!--Video-->
+  <div class="responsiveVideo">
+        <div class="gallery">
+          <iframe src="https://www.youtube.com/embed/UbvoywKM-Cg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </a>
+                <div class="desc">Add a description of the image here</div>
+        </div>
+  </div>
+<!--Video-->
+  <div class="responsiveVideo">
+        <div class="gallery">
+          <iframe src="https://www.youtube.com/embed/Lk289A9ENj0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+  </div>
+<!--Video-->
+  <div class="responsiveVideo">
+        <div class="gallery">
+<iframe src="https://www.youtube.com/embed/iIiUOptyGKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          </a>
+        <div class="desc">Add a description of the image here</div>
+       </div>
+  </div>
+</div>
+</div>
+
+
+<div id="photography" class="tabcontent">
+        <h3>PHOTOGRAPHY</h3>
+
+<div class=helper>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_5terre.jpg">
+        <img src="images/photography/msc/model_thumb.jpg" alt="young indian woman dressed in traditional apparel">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+
+
+  <!-- <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_5terre.jpg">
+        <img src="images/photography/msc/sunset_thumb.jpg" alt="long ways portrait of blue night sky with moon and star" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div> -->
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_5terre.jpg">
+        <img src="images/photography/msc/roses_thumb.jpg" alt="romantic afternoon rose scene in front of a fan">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_5terre.jpg">
+        <img src="images/photography/msc/fall_thumb.jpg" alt="Close up of running water">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_5terre.jpg">
+        <img src="images/photography/msc/Sax_thumb.jpg" alt="man playing saxophone on stage under bright indigo lights">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_5terre.jpg">
+        <img src="images/photography/msc/blue_people_thumb.jpg" alt="blue atmosphere of dancing crowd at concert">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_5terre.jpg">
+        <img src="images/photography/msc/film_thumb.jpg" alt="black and white asymmetrical portrait in front of fountain">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_lights.jpg">
+        <img src="images/photography/msc/onenight_thumb.jpg" alt="shadow of an ice house">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_5terre.jpg">
+        <img src="images/photography/msc/fire_thumb.jpg" alt="close up of fireworks">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_5terre.jpg">
+        <img src="images/photography/msc/lonely_thumb.jpg" alt="dead roses beside brown chair">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_lights.jpg">
+        <img src="images/photography/msc/tree_thumb.jpg" alt="close up of a pine tree with specks of snow">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="img_mountains.jpg">
+        <img src="images/photography/msc/atkfest_thumb.jpg" alt="rapper on the microphone blurred with pink and blue lights">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+</div>
+</div>
+
+
+
+<!---Mobile Nav--->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+
+<!---Tabs---->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

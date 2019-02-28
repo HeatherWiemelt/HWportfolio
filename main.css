@@ -1,0 +1,552 @@
+
+
+
+:root {
+  --pank: #FCEFFF;
+  --shadow: 0px 0px 10px .05px #ccc;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Trebuchet, sans-serif;
+  padding: 30px;
+  background: black;
+  text-align: center;
+}
+
+/* -------Header/Blog Title------- */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+
+/* ----------------Left column */
+.leftcolumn {
+  border-radius: 10px;
+  border-width: .05px;
+  background-image: url("images/tri.jpg");
+  background-position: center;
+  background-size: cover;
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+}
+
+
+a {
+  font: Verdana, sans-serif;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.main_links:hover {
+  -webkit-box-shadow: inset 0px 0px 60px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 60px -15px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 60px -15px rgba(0,0,0,0.75);
+  background-color: #ec91a6;
+}
+
+.main_links {
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px .05px #ccc;
+  border-width: .05px;
+  background-color: var(--pank);
+  width: 95%;
+  padding: 31px;
+}
+
+.main_links:visited {
+  background-color: #ccc;
+}
+
+.img {
+  background-color: #E3E0DA;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.head_title {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.pagecard {
+   box-shadow: var(--shadow);
+   border-width: 1px;
+   text-align:center;
+   background-color: var(--pank);
+   padding-top: 15px;
+   padding-bottom: 15px;
+   margin-left: 20px;
+   margin-right:20px;
+}
+/*------------fancy shadow*/
+
+
+.my_name {
+  color: white;
+}
+
+
+.heathercard {
+   padding-top: 20px;
+   margin-left: 10px;
+   margin-right:20px;
+}
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   margin-left: 10px;
+   margin-right:10px;
+}
+
+.content_box {
+   background-image: url("triangles.png");
+   height: auto;
+   padding: 20px;
+   margin-top: 20px;
+   margin-left: 20px;
+   margin-right:20px;
+  text-align: center;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*-------------------social*/
+
+.fa:hover {
+  box-shadow: var(--shadow);
+  color: var(--pank);
+}
+
+
+.fa-facebook {
+  background: black;
+  color: white;
+  width: 35px;
+  padding: 10px;
+  margin: 7px;
+  border-radius: 100%;
+}
+
+.fa-twitter {
+  background: black;
+  color: white;
+  width: 35px;
+  margin: 7px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+
+.fa-linkedin {
+  width: 35px;
+  margin: 7px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.fa-pinterest {
+  width: 35px;
+  margin: 7px;
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+
+.social_deets {
+  margin-bottom: 18px;
+  margin-right: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* -------End of Social*/
+
+.mobile-container {
+  display: none;
+}
+
+/*Resume Part*/
+
+#resume img {
+  box-shadow: var(--shadow);
+  width: 80%;
+  margin-bottom: 20px;
+
+}
+
+/* Style buttons */
+.btn {
+  background-color: var(--pank);
+  border: 1px solid black;
+  color: black;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: var(--shadow);
+}
+
+.btn:hover {
+  background-color: magenta;
+}
+
+/*---------------------TABS (w3schools)---------------------*/
+
+/* Style the tab */
+.tab {
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: var(--pank);
+  border: none;
+  /* border-radius: 100%; */
+  outline: none;
+  cursor: pointer;
+  padding: 2% 5%;
+  transition: 0.3s;
+  font-size: 16px;
+  box-shadow: var(--shadow);
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  -webkit-box-shadow: inset 0px 0px 60px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 60px -15px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 60px -15px rgba(0,0,0,0.75);
+  background-color: #ec91a6;
+}
+
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  text-align: center;
+}
+
+
+
+/*-------------------image Gallery--------------------------*/
+
+.helper {
+  text-align: center;
+}
+
+.gallery {
+  text-align: center;
+}
+
+
+div.gallery img {
+  width: 100%;
+  margin-left: 15%;;
+/*!!!!!*/
+  height: 180px;
+  text-align: center;
+  padding: 20px;
+  transition: all .2s ease-in-out;
+}
+
+div.gallery img:hover {
+   transform: scale(1.1);
+}
+
+
+div.desc {
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  width: 0%;
+  height=: 400px;
+  /* padding: 0 6px; */
+  float: left;
+  width: 250px;
+
+}
+
+.responsiveVideo {
+  width: 350px;
+  height=: 400px;
+  /* padding: 0 6px; */
+  float: left;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+
+.row-one {
+  list-style: none;
+  font-size: 0px;
+  margin-left: -2.5%;
+}
+
+.row-one li {
+  display:inline-block;;
+  padding: 10px;
+  margin: 0 0 2.5% 2.5%;
+  font-size: 16px;
+  font-szie: 1rem;
+  vertical-align: top;
+  box-shadow: 0 0 5px #ddd;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.product-image img {
+  max-width: 50%;
+  height:auto;
+  margin:0 0 10px;
+}
+
+.product-description h3 {
+  text-align: center;
+  margin: 0 0 5px;
+}
+
+.product-description p {
+  text-align: center;
+  font-size: .9em;
+  line-height: 1.5em;
+  color: #999;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 1830px) {
+  .responsive {
+
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1034px) {
+  /*---- Nav for Mobile------*/
+
+
+  .social_deets {
+      padding: 0px;
+  }
+}
+
+@media screen and (max-width: 956px) {
+  .fa-facebook {
+    margin: 0px;
+  }
+  .fa-linkedin {
+    margin: 0px;
+  }
+  .fa-pinterest {
+    margin: 0px;
+  }
+  .fa-twitter {
+    margin: 0px;
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+  .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    content: none;
+  }
+
+  .desktop-container {
+    display: none;
+  }
+
+  .mobile-container {
+    display: block;
+    margin: auto;
+    background-color: #var(--pank);
+    color: white;
+    border-radius: 10px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #var(--pank);
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    color: black;
+  }
+
+  .active {
+    background-color: #E3E0DA;
+    color: black;
+  }
+
+  .leftcolumn, .rightcolumn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .leftcolumn {
+    width: 100%;
+  }
+  .main_links {
+    width:100%;
+    margin-bottom: -20px;
+  }
+  .topnav a {
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 856px) {
+    div.gallery img {
+    margin-left: 0%;
+}
+    div.desc {
+    margin-left: 10%;
+    width: 90%;
+  }
+
+}
+
+
+@media screen and (max-width: 808px) {
+   .social_deets{
+    padding-right: 0px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 811px) {
+  .rightcolumn {
+    padding-right: 0px;
+  }
+}
+
+
+@media screen and (max-width: 663px) {
+    div.gallery img {
+      margin-left: 50%;
+  }
+    div.desc {
+      margin-left: 50%;
+      width: 90%;
+    }
+}
+
+
+
+@media screen and (max-width: 582px) {
+    div.gallery img {
+    margin-left: 30%;
+}
+    div.desc {
+    margin-left: 25%;
+    width: 90%;
+}
+    .tab button {
+      padding: 20px 100px 20px 100px;
+    }
+}
+
+
+@media screen and (max-width: 507px) {
+
+    div.desc {
+      margin-left: 25%;
+      width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .tab button {
+      padding: 10px 50px 7px 50px;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    div.gallery img {
+    margin-left: 0%;
+  }
+    div.desc {
+      margin-left: 10%;
+      width: 90%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    div.gallery img {
+    margin-left: -35%;
+  }
+    div.desc {
+      margin-left: 10%;
+      width: 50%;
+    }
+}
