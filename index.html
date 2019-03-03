@@ -74,7 +74,7 @@
 
 
       <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'web')">WEB</button>
+        <button class="tablinks" onclick="openCity(event, 'web')" id="defaultOpen">WEB</button>
         <button class="tablinks" onclick="openCity(event, 'print')">PRINT</button>
         <button class="tablinks" onclick="openCity(event, 'video')">VIDEO</button>
         <button class="tablinks" onclick="openCity(event, 'photography')">PHOTOS</button>
@@ -82,7 +82,7 @@
 
       <div id="web" class="tabcontent">
         <h3>WEB</h3>
-
+<div class=helper>
         <div class="responsive">
           <div class="gallery">
             <a target="_blank" href="images/web/atac_mobile_large.png">
@@ -92,7 +92,7 @@
           </div>
         </div>
 
-                <div class="responsive">
+          <div class="responsive">
             <div class="gallery">
               <a target="_blank" href="Arts Tech Animation Connection Desktop design">
                 <img src="images/web/atac_desktop.png" alt="Arts Tech Animation Connection Desktop design" width="500px">
@@ -137,8 +137,8 @@
             </div>
           </div>
           <div class="clearfix"></div>
-
 </div>
+        </div>
 
 
       <div id="print" class="tabcontent">
@@ -252,10 +252,10 @@
 
 
 <div id="video" class="tabcontent">
-        <h3>VIDEO</h3>
-<div class=helper>
+  <h3>VIDEO</h3>
+  <div class="helper">
 <!--Video-->
-  <div class="responsiveVideo">
+      <div class="responsiveVideo">
         <div class="gallery">
           <iframe src="https://www.youtube.com/embed/H2McZ5Uit10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </a>
@@ -448,6 +448,8 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+document.getElementById("defaultOpen").click();
 </script>
 
     </div>
