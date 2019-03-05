@@ -114,7 +114,7 @@ a {
 }
 
 .content_box {
-   background-image: url("triangles.png");
+   background-image: url("triangles.svg");
    height: auto;
    padding: 20px;
    margin-top: 20px;
@@ -218,7 +218,7 @@ a {
 /* Style the tab */
 .tab {
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Style the buttons inside the tab */
@@ -260,6 +260,11 @@ a {
   text-align: center;
 }
 
+
+.videohelper {
+
+}
+
 .gallery {
   text-align: center;
 }
@@ -267,9 +272,9 @@ a {
 
 div.gallery img {
   width: 100%;
-  margin-left: 15%;;
+  margin-left: 22%;;
 /*!!!!!*/
-  height: 180px;
+  /* height: 180px; */
   text-align: center;
   padding: 20px;
   transition: all .2s ease-in-out;
@@ -296,8 +301,8 @@ div.desc {
   width: 0%;
   height=: 400px;
   /* padding: 0 6px; */
-  float: left;
-  width: 250px;
+  /* float: left; */
+  width: 70%;
 
 }
 
@@ -352,28 +357,28 @@ div.desc {
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 1830px) {
-  .responsive {
+  /* .responsive {
 
     text-align: center;
-  }
+  } */
 }
 
 @media screen and (max-width: 1830px) {
-  div.gallery img {
+  /* div.gallery img {
     width: 90%;
     margin-left: 60%;
   }
   div.desc {
     width: 90%;
     margin-left: 60%;
-  }
+  } */
 }
 
 
 @media screen and (max-width: 1034px) {
   /*---- Nav for Mobile------*/
 
-  .social_deets {
+   .social_deets {
       padding: 0px;
   }
 }
@@ -396,12 +401,12 @@ div.desc {
 }
 
 @media screen and (max-width: 884px) {
-  div.gallery img {
+  /* div.gallery img {
     margin-left: 47%;
   }
   div.desc {
 
-  }
+  } */
 }
 
 @media screen and (max-width: 800px) {
@@ -423,7 +428,6 @@ div.desc {
   }
 
   .topnav {
-    overflow: hidden;
     background-color: #var(--pank);
     position: relative;
   }
@@ -434,9 +438,9 @@ div.desc {
 
   .topnav a {
     color: #000;
-    padding: 14px 16px;
+    /* padding: 14px 16px; */
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     display: block;
   }
 
@@ -445,6 +449,8 @@ div.desc {
     position: absolute;
     right: 0;
     top: 0;
+    width: 100%;
+    background-color: #E3E0DA;
   }
 
   .topnav a:hover {
@@ -469,20 +475,18 @@ div.desc {
     width:100%;
     margin-bottom: -20px;
   }
-  .topnav a {
-    padding: 0;
-  }
+
 }
 
 
 @media screen and (max-width: 856px) {
-    div.gallery img {
+    /* div.gallery img {
     margin-left: 0%;
 }
     div.desc {
     margin-left: 10%;
     width: 90%;
-  }
+  } */
 
 }
 
@@ -490,33 +494,32 @@ div.desc {
 @media screen and (max-width: 808px) {
    .social_deets{
     padding-right: 0px;
-
     }
 
 }
 
 
 @media screen and (max-width: 811px) {
-  .rightcolumn {
+  /* .rightcolumn {
     padding-right: 0px;
-  }
+  } */
 }
 
 
 @media screen and (max-width: 663px) {
-    div.gallery img {
+    /* div.gallery img {
       margin-left: 50%;
   }
     div.desc {
       margin-left: 50%;
       width: 90%;
-    }
+    } */
 }
 
 
 
 @media screen and (max-width: 582px) {
-    div.gallery img {
+    /* div.gallery img {
     margin-left: 30%;
 }
     div.desc {
@@ -525,13 +528,13 @@ div.desc {
 }
     .tab button {
       padding: 20px 100px 20px 100px;
-    }
+    } */
 }
 
 
 @media screen and (max-width: 507px) {
 
-    div.desc {
+    /* div.desc {
       margin-left: 25%;
       width: 90%;
     }
@@ -541,26 +544,41 @@ div.desc {
 @media screen and (max-width: 450px) {
     .tab button {
       padding: 10px 50px 7px 50px;
-    }
+    } */
 }
 
 
 @media screen and (max-width: 430px) {
-    div.gallery img {
-    margin-left: 0%;
+    /* div.gallery img {
+    margin-left: 20%;
   }
     div.desc {
-      margin-left: 10%;
-      width: 90%;
+      margin-left: 20%;
+      width: 60%;
     }
+    div.helper {
+      margin-left: -10%;
+    }
+    .tabcontent {
+      padding: 0px;
+    }
+    .gallery.desc {
+      margin-left: 20px;
+    } */
 }
 
 @media screen and (max-width: 340px) {
-    div.gallery img {
+    /* div.gallery img {
     margin-left: -35%;
   }
     div.desc {
       margin-left: 10%;
       width: 50%;
+    } */
+    /* div.helper {
+      margin-left: -40%;
     }
+    .tabcontent {
+      padding: 0px;
+    } */
 }
