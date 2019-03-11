@@ -18,6 +18,10 @@ body {
   text-align: center;
 }
 
+p {
+  text-align: justify;
+}
+
 /* -------Header/Blog Title------- */
 .header {
   padding: 30px;
@@ -261,9 +265,6 @@ a {
 }
 
 
-.videohelper {
-
-}
 
 .gallery {
   text-align: center;
