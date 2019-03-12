@@ -3,7 +3,7 @@
 
 :root {
   --pank: #FCEFFF;
-  --shadow: 0px 0px 10px .05px #ccc;
+  --shadow: 0px 0px 10px .05px white;
 }
 
 
@@ -12,14 +12,15 @@
 }
 
 body {
-  font-family: Trebuchet, sans-serif;
+  font-family: Verdana, sans-serif;
   padding: 30px;
-  background: black;
+  background: white;
   text-align: center;
 }
 
 p {
-  text-align: justify;
+  text-align: center;
+  font-family: Verdana, sans-serif;
 }
 
 /* -------Header/Blog Title------- */
@@ -29,6 +30,14 @@ p {
   text-align: center;
   background: white;
 }
+
+/*ABOUT ME*/
+
+.aboutMe_bio {
+  width: 250px;
+  box-shadow: var(--shadow);
+}
+
 
 
 /* ----------------Left column */
@@ -40,6 +49,7 @@ p {
   background-size: cover;
   float: left;
   width: 73%;
+  margin-bottom: 20px;
 }
 
 .rightcolumn {
@@ -61,15 +71,15 @@ a {
 
 .main_links {
   border-radius: 4px;
-  box-shadow: 0px 0px 10px .05px #ccc;
+  box-shadow: 0px 0px 10px .05px white;
   border-width: .05px;
   background-color: var(--pank);
-  width: 95%;
+  width: 90%;
   padding: 31px;
 }
 
 .main_links:visited {
-  background-color: #ccc;
+  background-color: white;
 }
 
 .img {
@@ -99,13 +109,12 @@ a {
 
 
 .my_name {
-  color: white;
+  color: black;
 }
 
 
 .heathercard {
    padding-top: 20px;
-   margin-left: 10px;
    margin-right:20px;
 }
 
@@ -143,8 +152,8 @@ a {
 
 
 .fa-facebook {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   width: 35px;
   padding: 10px;
   margin: 7px;
@@ -152,8 +161,8 @@ a {
 }
 
 .fa-twitter {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   width: 35px;
   margin: 7px;
   border-radius: 50%;
@@ -165,16 +174,16 @@ a {
   width: 35px;
   margin: 7px;
   border-radius: 50%;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   padding: 10px;
 }
 
 .fa-pinterest {
   width: 35px;
   margin: 7px;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   padding: 10px;
   border-radius: 50%;
 }
@@ -182,7 +191,7 @@ a {
 
 .social_deets {
   margin-bottom: 18px;
-  margin-right: 10px;
+  margin-right: 20px;
   text-align: center;
   padding: 10px;
 }
@@ -205,7 +214,7 @@ a {
 /* Style buttons */
 .btn {
   background-color: var(--pank);
-  border: 1px solid black;
+  border: 1px solid white;
   color: black;
   padding: 12px 30px;
   cursor: pointer;
@@ -352,27 +361,38 @@ div.desc {
   color: #999;
 }
 
+/*--------Footer*------*/
+
+footer {
+  box-shadow: var(--shadow);
+  width: 100%:
+  margin: 50px;
+  background-color: var(--pank);
+  padding: 10px;
+  border-radius: 5px;
+}
 
 /*---------------------------------------------------------------------------------------------------------------*/
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 
-@media screen and (max-width: 1830px) {
-  /* .responsive {
 
-    text-align: center;
-  } */
-}
 
-@media screen and (max-width: 1830px) {
-  /* div.gallery img {
-    width: 90%;
-    margin-left: 60%;
+
+@media screen and (max-width: 1890px) {
+  .social_deets {
+    padding: 0;
   }
-  div.desc {
-    width: 90%;
-    margin-left: 60%;
-  } */
+
+
+@media screen and (max-width: 1010px) {
+  .fa {
+  width: 0px;
+  }
+
+  .social_deets {
+    margin-right: 40px;
+  }
 }
 
 
@@ -401,14 +421,6 @@ div.desc {
 
 }
 
-@media screen and (max-width: 884px) {
-  /* div.gallery img {
-    margin-left: 47%;
-  }
-  div.desc {
-
-  } */
-}
 
 @media screen and (max-width: 800px) {
 
@@ -423,13 +435,13 @@ div.desc {
   .mobile-container {
     display: block;
     margin: auto;
-    background-color: #var(--pank);
+    background-color: var(--pank);
     color: white;
     border-radius: 10px;
   }
 
   .topnav {
-    background-color: #var(--pank);
+    background-color: var(--pank);
     position: relative;
   }
 
@@ -447,15 +459,17 @@ div.desc {
 
   .topnav a.icon {
     display: block;
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     top: 0;
     width: 100%;
     background-color: #E3E0DA;
+    margin-bottom: 7px;
+    box-shadow: var(--shadow);
   }
 
   .topnav a:hover {
-    color: black;
+    color: white;
   }
 
   .active {
@@ -464,7 +478,7 @@ div.desc {
   }
 
   .leftcolumn, .rightcolumn {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
     padding: 0px;
   }
@@ -475,6 +489,18 @@ div.desc {
   .main_links {
     width:100%;
     margin-bottom: -20px;
+  }
+
+  .heathercard {
+    margin-right: 0;
+  }
+  .social_deets {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .fa {
+    width: 35px;
   }
 
 }
@@ -488,7 +514,20 @@ div.desc {
 
 }
 
+@media screen and (max-width: 800px) {
+  .tab button {
+      width: 70%;
+      padding: 5%;
+  }
+}
 
+@media screen and (max-width:600) {
+  /*about me image*/
+  .aboutMe_bio {
+    padding:20px;
+    width: 70%;
+  }
+}
 
 @media screen and (max-width: 500px) {
 
@@ -502,7 +541,6 @@ div.desc {
   .responsiveVideo {
     margin-left: -20%;
     max-width: 250px;
-
   }
 }
 
